@@ -1,0 +1,150 @@
+.grid-hijo {
+	display: grid;
+	grid-template-columns: 2fr 3fr; /* 2 columnas dentro */
+	grid-template-rows: 2fr 20fr;
+	gap: 5px;
+	background: rgb(152, 170, 249);
+}
+
+.subitem {
+	background: rgb(150, 195, 248);
+	padding: 40px;
+}
+
+/*#miBotón{
+    text-align: center;
+    background-color: rgb(235, 190, 190);
+}*/
+
+#miBoton,
+#miBoton2,
+#miBoton3{
+	background: linear-gradient(45deg, #91bbeb, #247df0);
+	color: white;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 50px; /* completamente redondeado */
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+}
+
+#miBoton:active {
+	transform: scale(0.95); /* efecto al presionar */
+}
+
+/* Definir la animación de caída */
+@keyframes caer {
+	0% {
+		transform: translateY(-100vh); /* Empieza muy arriba */
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0); /* Termina en su posición normal */
+		opacity: 1;
+	}
+}
+
+/* Clase aplicada al objeto que caerá */
+.objeto-cae {
+	animation: caer 1s ease-out forwards; /* Duración, suavizado */
+	position: relative;
+}
+
+p {
+	color: #0d0d0d;
+  font-family: cursive;
+}
+
+h1 {
+	background: linear-gradient(45deg, #f8f7f7, #fd82a7);
+  color: #e2e3ec;
+}
+
+.pa{
+	background: linear-gradient(45deg, #7fd9ed, #0a69a4);
+     color: #ffffff;
+}
+
+#banda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #a5bdf1, #96dcf4);
+    color: white;
+    font-size: 36px;       /* letras más grandes */
+    padding: 40px 0;       /* altura mayor */
+    font-weight: bold;
+    transform: translateY(-800px); /* empieza 600px arriba de la pantalla */
+    transition: transform 1s ease; /* animación suave */
+    z-index: 2;
+}
+
+#banda.mostrar {
+    transform: translateY(0); /* posición final visible */
+}
+
+.oculto {
+    display: block;
+}
+
+
+
+#mostrarBtn {
+    max-width: 150px;        /* Ancho máximo */
+    width: auto;             /* Para que no se expanda a todo el grid */     /* Bordes redondeados opcionales */
+    background: linear-gradient(45deg, #91bbeb, #247df0);
+	color: white;
+	padding: 5px 30px;
+	border: none;
+	border-radius: 50px; /* completamente redondeado */
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+    justify-self: left;     /* Si está en grid */
+    align-self:start;
+}
+
+#banda2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #a5bdf1, #96dcf4);
+    color: white;
+    font-size: 36px;       /* letras más grandes */
+    padding: 40px 0;       /* altura mayor */
+    font-weight: bold;
+    transform: translateY(-800px); /* empieza 600px arriba de la pantalla */
+    transition: transform 1s ease; /* animación suave */
+    z-index: 2;
+}
+
+#banda.mostrar2 {
+    transform: translateY(0); /* posición final visible */
+}
+
+.oculto2 {
+    display: block;
+}
+
+#mostrarBtn2 {
+    max-width: 150px;        /* Ancho máximo */
+    width: auto;             /* Para que no se expanda a todo el grid */     /* Bordes redondeados opcionales */
+    background: linear-gradient(45deg, #91bbeb, #247df0);
+	color: white;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 50px; /* completamente redondeado */
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+        /* Si está en grid */
+}

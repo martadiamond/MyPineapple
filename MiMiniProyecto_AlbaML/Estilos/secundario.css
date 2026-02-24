@@ -1,0 +1,69 @@
+.grid-hijo {
+	display: grid;
+	grid-template-columns: 2fr 3fr; /* 2 columnas dentro */
+	grid-template-rows: 2fr 20fr;
+	gap: 5px;
+	background: rgb(249, 152, 152);
+}
+
+.subitem {
+	background: rgb(244, 207, 207);
+	padding: 40px;
+}
+
+/*#miBotón{
+    text-align: center;
+    background-color: rgb(235, 190, 190);
+}*/
+
+#miBoton,
+#miBoton2,
+#miBoton3 {
+	background: linear-gradient(45deg, #eb91a0, #fc2b69);
+	color: white;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 50px; /* completamente redondeado */
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+}
+
+#miBoton:active {
+	transform: scale(0.95); /* efecto al presionar */
+}
+
+/* Definir la animación de caída */
+@keyframes caer {
+	0% {
+		transform: translateY(-100vh); /* Empieza muy arriba */
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0); /* Termina en su posición normal */
+		opacity: 1;
+	}
+}
+
+/* Clase aplicada al objeto que caerá */
+.objeto-cae {
+	animation: caer 1s ease-out forwards; /* Duración, suavizado */
+	position: relative;
+}
+
+p {
+	color: #0d0d0d;
+  font-family: cursive;
+}
+
+h1 {
+	background: linear-gradient(45deg, #f8f7f7, #fd82a7);
+  color: #e4788a;
+}
+
+.pa{
+	background: linear-gradient(45deg, #7fd9ed, #259ee9);
+     color: #000000;
+}
